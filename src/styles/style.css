@@ -1,0 +1,104 @@
+/* @import url("./globals.css");
+@import url("./style.css");
+@import url("/src/fonts/fonts.css");
+@import url("./header.css");
+@import url("./heroSection.css");
+@import url("./servicesSection.css");
+@import url("./tourSection.css");
+@import url("./gallary.css");
+@import url("./constructionPlanning.css");
+@import url("./videoInterview.css");
+@import url("./turnKeyService.css");
+@import url("./teamSection.css"); */
+
+.content {
+  margin: 150px 0 0 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 356px;
+}
+
+.page__section {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  color: #ffffff;
+}
+.text__light {
+  color: #dabd91;
+}
+.text__title {
+  text-transform: uppercase;
+}
+.button {
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 17px 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.button:hover {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0), 0 0 0 4px #ff8c00;
+}
+
+.button__light {
+  background-color: #b49b7d;
+}
+
+
+
+.button__dark {
+  background-color: #273b46;
+}
+.button__brown {
+  background-color: #524f4c;
+}
+.gallary__card {
+}
+
+.gallary__wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.description-underline {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.wrpa{
+  width: 1140px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+@media (width >= 1920px) {
+  /* Стили для стандартного экрана 1920x1080 */
+  .content {
+    margin: 150px auto;
+  }
+  .tour__section {
+    align-self: end;
+  }
+  .page__section {
+    scale: 80%;
+  }
+  .header__menu .header__logo{
+    height: 120px;
+  }
+}
+
+@media (768px <= width <= 1728px) {
+  /* Стили для MacBook Pro с разрешением 1728x1117 */
+}
+
+@media (width <= 767px) {
+  /* Стили для мобильных устройств */
+}

@@ -1,0 +1,41 @@
+.construction__button{
+  padding: 16px 35px;
+  letter-spacing: 0.02rem;
+}
+
+.construction-planning {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.construction-planning__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* line-height: 125%;*/
+}
+.construction-planning__title {
+  font-size: 32px;
+  width: 960px;
+  text-transform: uppercase;
+  line-height: 117%;
+  letter-spacing: 0.03rem;
+}
+.construction-planning__description {
+  background-color: #d6d6d633;
+  width: 664px;
+  font-size: 26px;
+  border-radius: 10px;
+  padding: 10px;
+  align-self: end;
+  margin-right: 120px;
+    word-spacing: 0.15rem;
+    line-height: 115%;
+  /* letter-spacing: 0.1rem;  */
+}
+.construction__button-container {
+  align-self: end;
+  width: 365px;
+  margin-right: 270px;
+  
+}

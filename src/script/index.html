@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер обратного отсчёта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .timer {
+            display: flex;
+            gap: 10px;
+        }
+        .timer-unit {
+            background-color: #333;
+            color: white;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+        .timer-value {
+            font-size: 36px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="timer">
+        <div class="timer-unit">
+            <span class="timer-value" id="days">0</span>
+            <span>дней</span>
+        </div>
+        <div class="timer-unit">
+            <span class="timer-value" id="hours">0</span>
+            <span>часов</span>
+        </div>
+        <div class="timer-unit">
+            <span class="timer-value" id="minutes">0</span>
+            <span>минут</span>
+        </div>
+        <div class="timer-unit">
+            <span class="timer-value" id="seconds">0</span>
+            <span>секунд</span>
+        </div>
+    </div>
+
+    <script>
+        // Установите дату окончания таймера
+        let endDate = new Date();
+        endDate.setDate(endDate.getDate() + 1); // Например, 1 день с текущей даты
+
+        // Проверяем, есть ли сохраненное время в localStorage
+        let savedEndTime = localStorage.getItem('timerEndTime');
+        if (savedEndTime) {
+            endDate = new Date(savedEndTime);
+        } else {
+            localStorage.setItem('timerEndTime', endDate.toISOString());
+        }
+
+        function updateTimer() {
+            const now = new Date();
+            const timeLeft = endDate - now;
+
+            if (timeLeft <= 0) {
+                document.getElementById('days').textContent = '0';
+                document.getElementById('hours').textContent = '0';
+                document.getElementById('minutes').textContent = '0';
+                document.getElementById('seconds').textContent = '0';
+                return;
+            }
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+</body>
+</html>

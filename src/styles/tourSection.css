@@ -1,0 +1,72 @@
+.tour__section {
+  display: flex;
+  gap: 80px;
+  width: 1270px;
+  padding-top: 23px;
+}
+.tour__content {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+.tour__card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tour__title {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 51px;
+  gap: 60px;
+}
+.tour__heading {
+  font-size: 40px;
+  /* word-spacing: 0.3rem; */
+  letter-spacing: 0.04rem;
+  line-height: 120%;
+}
+.tour__description {
+  font-size: 32px;
+  letter-spacing: 0.02rem;
+  line-height: 119%;
+  padding-left: 33px;
+}
+
+.tour__button-container {
+  padding-left: 175px;
+  width: 46em;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.tour__button-description {
+  font-size: 20px;
+  width: 28rem;
+  text-align: end;
+  align-self: end;
+  line-height: 118%;
+}
+.tour__button {
+  height: 6.5rem;
+  text-align: center;
+  padding: 17px 40px;
+}
+
+.card__founder {
+  width: 312px;
+  height: 457px;
+  background-image: url("../images/founder_cardImage.jpg");
+  background-size: 120%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.card__description {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  line-height: 120%;
+  /* word-spacing: 06rem; */
+  letter-spacing: 0.06rem;
+}

@@ -1,0 +1,49 @@
+.legal-support__timer-container {
+  justify-self: end;
+  align-self: end;
+  display: flex;
+
+  /* margin: 0; */
+  /* background-color: #f0f0f0; */
+}
+.timer {
+  display: flex;
+  gap: 40px;
+}
+.timer-unit {
+  position: relative;
+  width: 115px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timer-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#DABD91 var(--progress), #333 0);
+  transition: --progress 0.2s linear;
+}
+.timer-inner {
+  position: relative;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.timer-title {
+  font-size: 22px;
+}
+.timer-value {
+  font-size: 36px;
+  font-weight: bold;
+  font-size: 40px;
+}

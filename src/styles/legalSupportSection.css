@@ -1,0 +1,59 @@
+.legal-support__content {
+  display: flex;
+  /* height: 540px; */
+}
+.legal-support {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width:  791px;
+  margin-top:9px;
+}
+.legal-support__title {
+  font-size: 38px;
+  
+  line-height: 117%;
+  word-spacing: 0.2rem;
+  letter-spacing: 0.03rem;
+}
+
+.legal-support__list {
+  display: flex;
+  flex-direction: column;
+  list-style: inside;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  gap: 10px;
+  /* margin-left: 32px; */
+}
+.legal-support__list-item {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 117%;
+    position: relative;
+    padding-left: 31px; /* Добавляем отступ для маркера */
+}
+
+.legal-support__list-item::before {
+    content: '•';
+    position: absolute; /* Позиционируем маркер абсолютно */
+    left: 0; /* Выравниваем маркер по левому краю */
+    vertical-align: top; /* Выравниваем маркер по верху */
+    /* margin-right: 12px; */
+}
+
+.legal-support__button-container {
+
+}
+.button {
+
+}
+.button__light {
+
+}
+.button__legal-support {
+margin-left: 240px;
+height: 100px;
+width: 435px;
+}
