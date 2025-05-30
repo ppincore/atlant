@@ -1,0 +1,80 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 361px;
+  box-sizing: border-box;
+  border-top: 3px solid #ffffff;
+  color: #ffffff;
+}
+.footer__content {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 291px;
+  gap: 33px;
+}
+.footer__content-wrapper {
+  display: flex;
+}
+.wrapper-right {
+    gap: 39px;
+}
+.wrapper-left {
+  gap: 40px;
+}
+.footer__address-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  gap: 10px;
+}
+.footer__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer__list-title {
+  font-size: 26px;
+  font-weight: 600;
+}
+.footer__list {
+  font-size: 18px;
+  line-height: 120%;
+}
+.footer__list-company {
+}
+.footer__list-item a {
+  color: #ffffff;
+}
+.footer__list-item .description-underline {
+  text-underline-offset: 3px;
+}
+.footer__link-list{
+  display: flex;
+  gap: 10px;
+}
+.footer__link-list .item__circle {
+  width: 57px;
+  height: 57px;
+}
+.footer__link-list .item__circle img {
+  width: 45px;
+  height: 45px;
+}
+
+@media (width >= 1920px) {
+  .footer__content{
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+@media (768px <= width <= 1728px) {
+  /* Стили для MacBook Pro с разрешением 1728x1117 */
+}
+
+@media (width <= 767px) {
+
+}

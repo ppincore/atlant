@@ -10,9 +10,11 @@
 @import url("./videoInterview.css");
 @import url("./turnKeyService.css");
 @import url("./teamSection.css"); */
+@import url("./variables.css");
 
 .content {
   margin: 150px 0 0 270px;
+  /* width: 1450px; */
   display: flex;
   flex-direction: column;
   gap: 356px;
@@ -33,65 +35,81 @@
 .text__title {
   text-transform: uppercase;
 }
+.link-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.item__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 88px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, #3b3b3b 0%, #ffffff 80%);
+}
+.item__icon {
+  opacity: 1;
+}
 .button {
   color: #ffffff;
   border-radius: 20px;
   padding: 17px 30px;
   font-size: 24px;
   font-weight: 600;
-}
-
-.button:hover {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0), 0 0 0 4px #ff8c00;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .button__light {
   background-color: #b49b7d;
+  box-shadow: 0 0 15px #d4a762;
 }
-
-
-
+.button__light:hover {
+  box-shadow: 0 0 25px #d4a762;
+}
+.button__dark,
+.button__brown {
+  box-shadow: 0 0 15px #f1f1f1;
+}
 .button__dark {
   background-color: #273b46;
+}
+.button__dark:hover,
+.button__brown:hover {
+  box-shadow: 0 0 25px #f1f1f1;
 }
 .button__brown {
   background-color: #524f4c;
 }
-.gallary__card {
-}
 
-.gallary__wrapp {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
 
 .description-underline {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
-.wrpa{
-  width: 1140px;
-  margin: 0 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
-}
 
 @media (width >= 1920px) {
   /* Стили для стандартного экрана 1920x1080 */
   .content {
-    margin: 150px auto;
+    margin: 0 auto;
+    padding-top: 150px;
+    max-width: 1240px;
   }
-  .tour__section {
+  /* .tour__section {
     align-self: end;
-  }
+  } */
   .page__section {
-    scale: 80%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
   }
-  .header__menu .header__logo{
+  .header__menu .header__logo {
     height: 120px;
+  }
+  .wrpa {
+    transform: scale(0.8);
   }
 }
 
@@ -100,5 +118,8 @@
 }
 
 @media (width <= 767px) {
+  .app {
+    width: 100%;
+  }
   /* Стили для мобильных устройств */
 }

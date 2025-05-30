@@ -65,26 +65,41 @@
   line-height: 125%;
   letter-spacing: 0.07rem;
 }
-.hero__link-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* gap: 17px; */
-}
+
 .hero__button {
   width: 720px;
   height: 110px;
 }
-.item__circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 88px;
-  height: 88px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  background: radial-gradient(ellipse at center, #3b3b3b 0%, #ffffff 80%);
+
+@media (width >= 1920px) {
+  .hero__content{
+    margin-left: 50px;
+  }
+  .section__hero {
+    width: 100%;
+    gap: 40px;
+  }
+  .hero__heading {
+    font-size: 40px;
+    width: 800px;
+  }
+  .hero__description {
+    font-size: 27px;
+  }
+  .hero__title {
+    gap: 15px;
+    padding: 30px 0 23px 23px;
+  }
+  .hero__button {
+    width: 570px;
+    height: 100px;
+    padding: 17px 13px;
+  }
 }
-.item__icon {
-  opacity: 1;
+
+@media (768px <= width <= 1728px) {
+  /* Стили для MacBook Pro с разрешением 1728x1117 */
+}
+
+@media (width <= 767px) {
 }

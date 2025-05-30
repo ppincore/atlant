@@ -1,4 +1,4 @@
-.construction__button{
+.construction__button {
   padding: 16px 35px;
   letter-spacing: 0.02rem;
 }
@@ -29,13 +29,35 @@
   padding: 10px;
   align-self: end;
   margin-right: 120px;
-    word-spacing: 0.15rem;
-    line-height: 115%;
+  word-spacing: 0.15rem;
+  line-height: 115%;
   /* letter-spacing: 0.1rem;  */
 }
 .construction__button-container {
   align-self: end;
   width: 365px;
   margin-right: 270px;
-  
+}
+
+@media (width >= 1920px) {
+  .construction-planning {
+    gap: 8px ;
+  }
+  .construction-planning__title {
+    width: 830px;
+    font-size: 27px;
+  }
+  .construction-planning__content {
+    gap: 1px;
+  }
+  .construction-planning__description{
+    padding: 8px;
+  }
+}
+
+@media (768px <= width <= 1728px) {
+  /* Стили для MacBook Pro с разрешением 1728x1117 */
+}
+
+@media (width <= 767px) {
 }

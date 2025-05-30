@@ -6,14 +6,29 @@
   display: flex;
   flex-direction: column;
   gap: 36px;
-    padding-left: 20px;
+  padding-left: 20px;
 }
 .turnkey-service__title-wrapper {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 667px;
-
+  position: relative;
+  z-index: 2;
+}
+.turnkey-service__title-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: -50px;
+  transform: rotate(32.45deg) scale(1.11);
+  bottom: -105px;
+  background-image: url("/src/images/keys.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 23px;
+  z-index: -1;
 }
 .turnkey-service__title {
   font-weight: 500;
@@ -26,31 +41,58 @@
   font-weight: 400;
   font-size: 24px;
   border-radius: 10px;
-  background-color: #c50c0c4d;
+  background-color: #a6a4a44d;
   filter: blur(16%);
   padding: 12px 5px;
   width: 74%;
   line-height: 117%;
 }
-.turnkey-service__button-container {
-}
 .turnkey-service__button {
   font-size: 20px;
   width: 546px;
   letter-spacing: 0.045rem;
-  /* padding: 17px 40px; */
-  /* word-spacing: 0.3rem; */
 }
 .turnkey-service__img {
-  width: 585px;
-  height: 382px;
-  overflow: hidden; /* This will hide any part of the image that exceeds the container */
-  border-radius: 23px;
+  position: relative;
+  overflow: visible;
   align-self: center;
+  z-index: 2;
 }
 
 .turnkey-service__img img {
-  width: 100%; /* This makes the image width 100% of its container */
-  height: 100%; /* This makes the image height 100% of its container */
-  object-fit: cover; /* This ensures the image covers the area without distortion */
+  max-width: 585px;
+  max-height: 382px;
+  border-radius: 23px;
+  object-fit: cover;
+}
+
+.turnkey-service__img::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/spiral.png");
+  background-size: contain;
+  transform: rotate(-45deg);
+  top: 20px;
+  left: -55px;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+
+@media (width >= 1920px) {
+  .turnkey-service__wrapper{
+    width: 100%;
+  }
+  .turnkey-service__content{
+    padding: 0;
+  }
+}
+
+@media (768px <= width <= 1728px) {
+  /* Стили для MacBook Pro с разрешением 1728x1117 */
+}
+
+@media (width <= 767px) {
+
 }

@@ -11,7 +11,7 @@
       <header class="header">
         <nav class="header__menu">
           <img src="./src/images/logo.svg" alt="" class="logo header__logo" />
-          <ul class="header__list">
+          <ul class="header__list header__link-list">
             <li class="header__item">
               <a href="#">Фундамент <br />вашего <br />успеха</a>
             </li>
@@ -55,7 +55,7 @@
                   и быть уверенными в том, что
                   <span class="text__light"
                     >срок сдачи каждого этапа будет вовремя</span
-                  > 
+                  >
                 </p>
               </div>
               <div class="hero__button-container">
@@ -70,7 +70,7 @@
                 Подпишитесь на наши соц сети, чтобы следить за ходом
                 строительства текущих проектов
               </p>
-              <ul class="hero__link-list">
+              <ul class="link-list">
                 <li class="link__list-item">
                   <a
                     href="https://vk.com/feed"
@@ -195,7 +195,7 @@
           </div>
         </section>
         <section class="page__section">
-          <div class="wrpa">
+          <div class="gallary__section-content">
             <div class="gallary__wrapp">
               <h2 class="gallary__title">Поможем выбрать лучший район</h2>
               <div class="gallery__cities">
@@ -236,7 +236,7 @@
               <div class="construction-planning__content">
                 <h2 class="construction-planning__title">
                   Эффективно спланируем все этапы строительства с учетом
-                  сезонности и доступности стройматериалов
+                  сезонности и доступности стройматериалов 
                 </h2>
                 <p class="construction-planning__description">
                   <span class="description-underline">у вас</span> будет чёткий
@@ -500,6 +500,10 @@
                   <button class="button button__light button__legal-support">
                     Оставить заявку на оформления документов
                   </button>
+                  <p class="legal-support__button-description text__title">
+                    успейте оставить заявку, чтобы сэкономить на оформлении
+                    документов 15 000 руб
+                  </p>
                 </div>
               </div>
             </div>
@@ -542,10 +546,8 @@
             <div class="home-offer__content">
               <h2 class="home-offer__title text__title">
                 оставьте заявку на
-                <span class="text__light"
-                  >строительство вашего дома</span
-                >
-                мечты с сервисным обслуживанием в течение 12 месяцев и
+                <span class="text__light">строительство вашего дома</span>
+                мечты с сервисным обслуживанием в течении 12 месяцев и
                 <span class="text__light"
                   >гарантией по эксплуатации от 50 лет</span
                 >
@@ -555,17 +557,184 @@
               <p class="home-offer__text">
                 Чтобы получить консультацию специалиста и рассчитать подробную
                 смету, звоните по телефону
-                <span class="text__light text__title">8 800 770 01 33</span>
-                или оставьте свои контакты, мы перезвоним вам в течение 15 минут
+                <br /><span class="text__light text__title home-offer__phone"
+                  >8 800 770 01 33</span
+                >
+                или оставьте свои контакты, мы перезвоним вам в течении 15 минут
               </p>
-              <button class="home-offer__button home-offer__button--light">
+              <button class="button button__light button home-offer__button">
                 перезвоните мне
               </button>
             </div>
           </div>
         </section>
       </main>
-      <footer class="footer">footer</footer>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__content-wrapper wrapper-left">
+            <div class="footer__list-wrapper footer__company">
+              <h3 class="footer__company-title footer__list-title">Компания</h3>
+              <ul class="footer__list footer__list-company">
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">О компании</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">История</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Вопрос-ответ</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Контакты</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Партнеры</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Реквизиты</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Политика обработки</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">персональных данных</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list-wrapper footer__catalog">
+              <h3 class="footer__catalog-title footer__list-title">Каталог</h3>
+              <ul class="footer__list footer__list-catalog">
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Газоблок</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Дома из блоков</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Дома из забутовочного кирпича</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Дома из керамзитоблока</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Дома из кирпича</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Дома из поромакса</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Дома из ракушечника</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Дополнительные строения</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__content-wrapper wrapper-right">
+            <div class="footer__list-wrapper footer__services">
+              <h3 class="footer__services-title footer__list-title">Услуги</h3>
+              <ul class="footer__list footer__list-services">
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Подбор земельного участка</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Проектирование дома</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Строительство дома</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank"> Дизайн помещений</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Ландшафт и благоустройство</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Ремонт</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank"> Подбор готового дома</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" target="_blank">Строительство фундамента</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__address-wrapper">
+              <ul class="footer__list footer__list-address">
+                <li class="footer__list-item">
+                  <a href="tel:+88007700133">Звоните: 8 (800) 770-01-33</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="mailto:mail@atlant93.ru"
+                    >Пишите
+                    <span class="description-underline"
+                      >mail@atlant93.ru</span
+                    ></a
+                  >
+                </li>
+                <li class="footer__list-item">Приезжайте в офис: г.</li>
+                <li class="footer__list-item">Краснодар, ул. Московская 48</li>
+              </ul>
+              <ul class="link-list footer__link-list">
+                <li class="link__list-item">
+                  <a
+                    href="https://vk.com/feed"
+                    target="_blank"
+                    class="item__circle"
+                    ><img
+                      src="./src/images/vk__link.svg"
+                      alt=""
+                      class="item__icon"
+                  /></a>
+                </li>
+                <li class="link__list-item">
+                  <a
+                    href="https://telegram.org/"
+                    target="_blank"
+                    class="item__circle"
+                    ><img
+                      src="./src/images/tg__link.svg"
+                      alt=""
+                      class="item__icon"
+                  /></a>
+                </li>
+                <li class="link__list-item">
+                  <a
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    class="item__circle"
+                    ><img
+                      src="./src/images/yt__link.svg"
+                      alt=""
+                      class="item__icon"
+                  /></a>
+                </li>
+                <li class="link__list-item">
+                  <a href="https://ok.ru/" target="_blank" class="item__circle"
+                    ><img
+                      src="./src/images/ok__link.svg"
+                      alt=""
+                      class="item__icon"
+                  /></a>
+                </li>
+                <li class="link__list-item">
+                  <a
+                    href="https://dzen.ru/"
+                    target="_blank"
+                    class="item__circle"
+                    ><img
+                      src="./src/images/dzen__link.svg"
+                      alt=""
+                      class="item__icon"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="module" src="/src/script/main.js"></script>
   </body>

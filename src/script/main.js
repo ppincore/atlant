@@ -14,19 +14,22 @@ import "../styles/teamSection.css";
 import "../styles/managerSection.css";
 import "../styles/legalSupportSection.css";
 import "../styles/timer.css";
+import "../styles/homeOffer.css"
+import '../styles/footer.css'
+
 const headerElem = document.querySelector(".header");
 const galleryCards = document.querySelectorAll(".gallery__cities-card");
 const galleryMainCard = document.getElementById("gallery__cities-card3");
 
 const videoGallaryCards = document.querySelectorAll(".video__gallary-card");
 const videoGallaryMainCard = document.getElementById("video__gallary-card2");
-
+console.log(videoGallaryMainCard)
 function setHeaderOpacityOnScroll(header) {
   let scrolled = window.pageYOffset || document.documentElement.scrollTop;
   header.style.backgroundColor = scrolled ? "#524F4C" : "transparent";
 }
 
-function resetVideoCards(videoGallaryCards, videoGallaryMainCard) {
+function resetVideoCards() {
   videoGallaryCards.forEach((c) => {
     c.style.width = "";
     c.style.height = "";
@@ -34,25 +37,27 @@ function resetVideoCards(videoGallaryCards, videoGallaryMainCard) {
   });
 
   // Возвращаем главную карточку в исходное состояние
-  videoGallaryMainCard.style.width = "385px";
-  videoGallaryMainCard.style.height = "207px";
+  videoGallaryMainCard.style.width = "465px";
+  videoGallaryMainCard.style.height = "260px";
   videoGallaryMainCard.style.zIndex = "3";
 }
 
 function zoomVideoGallaryCard(cards, mainCard) {
+  console.log(cards,mainCard)
   cards.forEach((card) => {
     card.addEventListener("mouseenter", function () {
-      card.style.width = "385px";
-      card.style.height = "207px";
+      card.style.width = "465px";
+      card.style.height = "260px";
       card.style.zIndex = "4";
       if (card !== mainCard) {
-        mainCard.style.width = "385px";
-        mainCard.style.height = "207px";
+        console.log(mainCard)
+        mainCard.style.width = "445px";
+        mainCard.style.height = "240px";
         mainCard.style.zIndex = "3";
       }
     });
     card.addEventListener("mouseleave", function () {
-      resetVideoCards(cards, mainCard);
+      resetVideoCards();
     });
   });
 }
@@ -94,11 +99,10 @@ window.addEventListener("scroll", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   resetCards();
-  resetVideoCards(videoGallaryCards, videoGallaryMainCard);
+  resetVideoCards();
   zoomVideoGallaryCard(
     videoGallaryCards,
-    videoGallaryCards,
-    videoGallaryMainCard
+    videoGallaryMainCard,
   );
   zoomGallaryCard(galleryCards, galleryMainCard);
 });
@@ -121,10 +125,24 @@ function updateTimer() {
   const timeLeft = endDate - now;
 
   if (timeLeft <= 0) {
+    // Если таймер завершился, устанавливаем новую дату окончания
+    endDate = new Date();
+    endDate.setDate(endDate.getDate() + 1); // Добавляем 1 день
+    endDate.setHours(endDate.getHours() + 6); // Добавляем 6 часов
+    endDate.setMinutes(endDate.getMinutes() + 5); // Добавляем 5 минут
+    localStorage.setItem("timerEndTime", endDate.toISOString());
+
+    // Обновляем отображение таймера
     document.getElementById("days").textContent = "0";
     document.getElementById("hours").textContent = "0";
     document.getElementById("minutes").textContent = "0";
     document.getElementById("seconds").textContent = "0";
+
+    // Обновляем шкалу для каждого круга
+    document.querySelectorAll(".timer-circle")[0].style.setProperty("--progress", "0%");
+    document.querySelectorAll(".timer-circle")[1].style.setProperty("--progress", "0%");
+    document.querySelectorAll(".timer-circle")[2].style.setProperty("--progress", "0%");
+    document.querySelectorAll(".timer-circle")[3].style.setProperty("--progress", "0%");
     return;
   }
 

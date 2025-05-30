@@ -3,17 +3,17 @@
   align-self: end;
   display: flex;
 
-  /* margin: 0; */
+  margin-bottom: 37px;
   /* background-color: #f0f0f0; */
 }
 .timer {
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
 .timer-unit {
   position: relative;
-  width: 115px;
-  height: 115px;
+  width: 120px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,8 +29,8 @@
 }
 .timer-inner {
   position: relative;
-  width: 105px;
-  height: 105px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   background-color: #000;
   display: flex;
@@ -46,4 +46,18 @@
   font-size: 36px;
   font-weight: bold;
   font-size: 40px;
+}
+
+@media (width >= 1920px) {
+  .legal-support__timer-container{
+
+  }
+}
+
+@media (768px <= width <= 1728px) {
+  /* Стили для MacBook Pro с разрешением 1728x1117 */
+}
+
+@media (width <= 767px) {
+
 }
