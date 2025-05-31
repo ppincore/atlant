@@ -4,7 +4,7 @@
   align-items: center;
   justify-self: center;
   width: 1190px;
-  /* margin-top: 45px; */
+  margin-top: 45px;
   gap: 45px;
 }
 .team__list-title {
@@ -85,7 +85,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.button__light:hover::after {
+.team__button:hover::after {
   animation: sway 2s ease-in-out infinite alternate;
 }
 
@@ -101,10 +101,12 @@
   }
 }
 
-@media (width >= 1920px) {
+@media (width >= 1729px) {
   .team__section {
     width: 100%;
-    gap: 25px;
+    gap: 18px;
+    transform: scale(0.95);
+    margin-top: 10px;
   }
   .team__list {
     gap: 25px;
@@ -113,6 +115,9 @@
   .team__list-title {
     font-size: 38px;
     transform: scale(0.9);
+  }
+  .team__list-title{
+    margin-top: 100px;
   }
 }
 

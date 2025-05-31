@@ -58,10 +58,7 @@
   letter-spacing: -0.01rem;
   line-height: 135%;
 }
-.button {
-}
-.button__light {
-}
+
 .button__legal-support {
   margin-left: 240px;
   height: 100px;
@@ -72,7 +69,7 @@
 }
 
 
-@media (width >= 1920px) {
+@media (width >= 1729px) {
   .legal-support__content{
     width: 100%;
   }

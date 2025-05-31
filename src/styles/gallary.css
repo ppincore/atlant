@@ -106,17 +106,18 @@
   width: 550px;
 }
 
-@media (width >= 1920px) {
+@media (width >= 1729px) {
   .gallary__section-content {
     gap: 20px;
     max-height: 100vh;
+    
   }
-
   .gallery__cities{
-    height: 270px;
+    height: 280px;
   }
   .gallary__wrapp{
     transform: scale(0.9);
+    margin-top: 90px;
   }
 }
 

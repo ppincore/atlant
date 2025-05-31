@@ -34,6 +34,7 @@ body {
   height: 100%;
   width: 100%;
   line-height: 1;
+  /* overflow: hidden; */
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -69,7 +70,7 @@ a:hover {
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
 
@@ -87,15 +88,24 @@ h6 {
   font-weight: 400;
 }
 .app {
-  min-height: 100%;
+  height: 100vh;
+  width: 100%;
+  /* min-height: 100%; */
   display: flex;
   flex-direction: column;
   gap: 120px;
-  background-color: #47433F;
+  /* background-color: #47433f; */
   position: relative;
+  background-image: url("../images/hero__bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .content {
   /* width: 1110px; */
   /* margin: 0 auto; */
   flex: 1 1 auto;
+}
+
+body {
 }

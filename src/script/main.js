@@ -14,83 +14,31 @@ import "../styles/teamSection.css";
 import "../styles/managerSection.css";
 import "../styles/legalSupportSection.css";
 import "../styles/timer.css";
-import "../styles/homeOffer.css"
-import '../styles/footer.css'
+import "../styles/homeOffer.css";
+import "../styles/footer.css";
+
+import { setHeaderOpacityOnScroll } from "./setHeaderOpacityOnScroll";
+import {
+  resetCards,
+  zoomCard,
+  cardSizeVideo,
+  cardSizePhoto,
+} from "./cardScale";
+// import { smoothScroll } from "./smoothScroll";
 
 const headerElem = document.querySelector(".header");
 const galleryCards = document.querySelectorAll(".gallery__cities-card");
 const galleryMainCard = document.getElementById("gallery__cities-card3");
-
 const videoGallaryCards = document.querySelectorAll(".video__gallary-card");
 const videoGallaryMainCard = document.getElementById("video__gallary-card2");
-console.log(videoGallaryMainCard)
-function setHeaderOpacityOnScroll(header) {
-  let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  header.style.backgroundColor = scrolled ? "#524F4C" : "transparent";
-}
+const sections = document.querySelectorAll(".page__section");
+const state = {
+  currentSectionIndex: 0
+};
 
-function resetVideoCards() {
-  videoGallaryCards.forEach((c) => {
-    c.style.width = "";
-    c.style.height = "";
-    c.style.zIndex = "";
-  });
-
-  // Возвращаем главную карточку в исходное состояние
-  videoGallaryMainCard.style.width = "465px";
-  videoGallaryMainCard.style.height = "260px";
-  videoGallaryMainCard.style.zIndex = "3";
-}
-
-function zoomVideoGallaryCard(cards, mainCard) {
-  console.log(cards,mainCard)
-  cards.forEach((card) => {
-    card.addEventListener("mouseenter", function () {
-      card.style.width = "465px";
-      card.style.height = "260px";
-      card.style.zIndex = "4";
-      if (card !== mainCard) {
-        console.log(mainCard)
-        mainCard.style.width = "445px";
-        mainCard.style.height = "240px";
-        mainCard.style.zIndex = "3";
-      }
-    });
-    card.addEventListener("mouseleave", function () {
-      resetVideoCards();
-    });
-  });
-}
-
-function resetCards() {
-  galleryCards.forEach((c) => {
-    c.style.width = "";
-    c.style.height = "";
-    c.style.zIndex = "";
-  });
-
-  // Возвращаем главную карточку в исходное состояние
-  galleryMainCard.style.width = "300px";
-  galleryMainCard.style.height = "330px";
-  galleryMainCard.style.zIndex = "3";
-}
-
-function zoomGallaryCard(cards, mainCard) {
-  cards.forEach((card) => {
-    card.addEventListener("mouseenter", function () {
-      card.style.width = "300px";
-      card.style.height = "330px";
-      card.style.zIndex = "4";
-      if (card !== mainCard) {
-        mainCard.style.width = "280px";
-        mainCard.style.height = "310px";
-        mainCard.style.zIndex = "3";
-      }
-    });
-    card.addEventListener("mouseleave", function () {
-      resetCards();
-    });
-  });
+function initCards(cards, mainCard, cardConfig){
+  resetCards(cards, mainCard, cardConfig);
+  zoomCard(cards, mainCard, cardConfig);
 }
 
 window.addEventListener("scroll", () => {
@@ -98,14 +46,16 @@ window.addEventListener("scroll", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  resetCards();
-  resetVideoCards();
-  zoomVideoGallaryCard(
-    videoGallaryCards,
-    videoGallaryMainCard,
-  );
-  zoomGallaryCard(galleryCards, galleryMainCard);
+  initCards(videoGallaryCards, videoGallaryMainCard, cardSizeVideo);
+  initCards(galleryCards, galleryMainCard, cardSizePhoto);
 });
+
+
+  
+
+  // window.addEventListener("wheel", (e) => {
+  //   smoothScroll(e.deltaY, sections,state);
+  // });
 
 let endDate = new Date();
 endDate.setDate(endDate.getDate() + 1); // Добавляем 1 день
@@ -139,10 +89,18 @@ function updateTimer() {
     document.getElementById("seconds").textContent = "0";
 
     // Обновляем шкалу для каждого круга
-    document.querySelectorAll(".timer-circle")[0].style.setProperty("--progress", "0%");
-    document.querySelectorAll(".timer-circle")[1].style.setProperty("--progress", "0%");
-    document.querySelectorAll(".timer-circle")[2].style.setProperty("--progress", "0%");
-    document.querySelectorAll(".timer-circle")[3].style.setProperty("--progress", "0%");
+    document
+      .querySelectorAll(".timer-circle")[0]
+      .style.setProperty("--progress", "0%");
+    document
+      .querySelectorAll(".timer-circle")[1]
+      .style.setProperty("--progress", "0%");
+    document
+      .querySelectorAll(".timer-circle")[2]
+      .style.setProperty("--progress", "0%");
+    document
+      .querySelectorAll(".timer-circle")[3]
+      .style.setProperty("--progress", "0%");
     return;
   }
 

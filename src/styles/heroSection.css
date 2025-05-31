@@ -71,7 +71,7 @@
   height: 110px;
 }
 
-@media (width >= 1920px) {
+@media (width >= 1729px) {
   .hero__content{
     margin-left: 50px;
   }

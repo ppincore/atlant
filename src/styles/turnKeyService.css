@@ -69,18 +69,30 @@
 .turnkey-service__img::after {
   content: "";
   position: absolute;
-  background-image: url("../images/spiral.png");
+  background-image: url("../images/spiral_v2.svg");
   background-size: contain;
-  transform: rotate(-45deg);
+  transform: rotate(-15deg);
   top: 20px;
-  left: -55px;
+  left: -93px;
   width: 200px;
   height: 200px;
   z-index: -1;
 }
 
+.turnkey-service__img::before{
+  content: "";
+  position: absolute;
+  background-image: url("../images/spiral_v2.svg");
+  background-size: contain;
+  transform: rotate(-15deg);
+  top: -120px;
+  right: -93px;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
 
-@media (width >= 1920px) {
+@media (width >= 1729px) {
   .turnkey-service__wrapper{
     width: 100%;
   }

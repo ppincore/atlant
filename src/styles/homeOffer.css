@@ -1,6 +1,6 @@
 .home-offer {
   margin-top: 30px;
-
+  margin-bottom: 125px;
   display: flex;
   flex-direction: row;
   gap: 45px;
@@ -39,10 +39,6 @@
   font-size: 20px;
   line-height: 120%;
 }
-.button {
-}
-.button__light {
-}
 .home-offer__button {
   width: 300px;
   height: 80px;
@@ -57,9 +53,10 @@
   box-shadow: 0 0 150px #d4a762;
 }
 
-@media (width >= 1920px) {
+@media (width >= 1729px) {
   .home-offer{
-    margin: 0;
+    margin-bottom: 120px;
+    margin-top: 0;
     align-self: center;
   }
 }
