@@ -16,6 +16,8 @@ import "../styles/legalSupportSection.css";
 import "../styles/timer.css";
 import "../styles/homeOffer.css";
 import "../styles/footer.css";
+import "../styles/backgrounds.css"
+
 
 import { setHeaderOpacityOnScroll } from "./setHeaderOpacityOnScroll";
 import {

@@ -17,23 +17,56 @@
 @import url("./variables.css"); */
 
 .content {
-  margin: 150px 0 0 270px;
+  /* margin-top: 150px; */
+  /* align-items: center; */
+  /* margin: 150px 0 0 270px; */
   /* width: 1450px; */
   display: flex;
   flex-direction: column;
-  gap: 350px;
+
+  /* gap: 350px; */
 }
 
 .page__section {
+  position: relative;
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-self: center;
   width: 100%;
-  height: 100%;
-  
-  max-width: 1440px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
 }
+.page__section div {
+  max-width: 1440px;
+}
+
+.page__section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.page__section::after {
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 .text__light {
   color: #dabd91;
 }
@@ -55,7 +88,7 @@
   border-radius: 50%;
   background: radial-gradient(ellipse at center, #3b3b3b 0%, #ffffff 80%);
 }
-.item__circle:hover{
+.item__circle:hover {
   box-shadow: 0 0 15px #f1f1f1;
 }
 .item__icon {
@@ -92,7 +125,6 @@
   background-color: #524f4c;
 }
 
-
 .description-underline {
   text-decoration: underline;
   text-underline-offset: 8px;
@@ -101,9 +133,9 @@
 @media (width >= 1729px) {
   /* Стили для стандартного экрана 1920x1080 */
   .content {
-    margin: 0 auto;
+    /* margin: 0 auto;
     padding-top: 150px;
-    max-width: 1240px;
+    max-width: 1240px; */
   }
   /* .tour__section {
     align-self: end;

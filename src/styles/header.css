@@ -9,7 +9,8 @@
 }
 .header__menu {
   display: flex;
-  margin: 0 0 0 259px;
+  justify-self: center;
+  /* margin: 0 0 0 259px; */
 }
 .header__list {
   display: flex;
