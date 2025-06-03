@@ -19,7 +19,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* background-color: #f0f0f0; */
 }
+.timer-unit::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #dabd91 ;
+}
+
 .timer-circle {
   position: absolute;
   width: 100%;

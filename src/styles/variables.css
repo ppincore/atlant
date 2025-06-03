@@ -1,6 +1,6 @@
 :root {
   /* Цвета */
-  --color-main-bg: #47433F;
+  /* --color-main-bg: #47433F;
   --color-card-title: #555454;
   --color-light: #dabd91;
   --color-dark: #273b46;
@@ -10,28 +10,28 @@
   --color-gray: #333;
   --color-gray-light: #ccc;
   --color-accent: #b49b7d;
-  --color-card-bg: #434343;
+  --color-card-bg: #434343; */
 
   /* Размеры и радиусы */
-  --radius-main: 10px;
+  /* --radius-main: 10px;
   --radius-card-img: 11px;
   --radius-card: 20px;
   --radius-manager-img: 35px;
-  --radius-turnkey-img: 23px;
+  --radius-turnkey-img: 23px; */
 
   /* Тени */
-  --shadow-main: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* --shadow-main: 0 4px 8px rgba(0, 0, 0, 0.1); */
 
   /* Шрифты */
-  --font-title-size: 40px;
+  /* --font-title-size: 40px;
   --font-title-weight: 500;
   --font-card-title-size: 27px;
   --font-card-title-weight: 500;
   --font-description-size: 32px;
   --font-description-weight: 400;
   --font-button-size: 27px;
-  --font-button-weight: 600;
+  --font-button-weight: 600; */
 
   /* Прочее */
-  --transition-main: transform 0.5s, width 0.5s, height 0.5s;
+  /* --transition-main: transform 0.5s, width 0.5s, height 0.5s; */
 }

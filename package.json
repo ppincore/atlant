@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "cssnano": "^7.0.7",
+    "postcss": "^8.5.4",
+    "sass": "^1.89.1",
     "vite": "^6.3.5"
   }
 }

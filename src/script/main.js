@@ -44,7 +44,7 @@ function initCards(cards, mainCard, cardConfig){
 }
 
 window.addEventListener("scroll", () => {
-  setHeaderOpacityOnScroll(headerElem);
+  setHeaderOpacityOnScroll(headerElem, "#524F4C");
 });
 
 document.addEventListener("DOMContentLoaded", function () {

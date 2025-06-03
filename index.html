@@ -1,24 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Строительство домов под ключ в Краснодарском крае. Современные технологии, гарантия, прозрачная смета, персональный менеджер. Атлант — ваш надежный застройщик."
+    />
+    <meta
+      name="keywords"
+      content="строительство домов, Краснодар, дома под ключ, Атлант, застройщик, строительство, недвижимость, купить дом"
+    />
+    <meta name="robots" content="index, follow" />
     <meta name="color-scheme" content="dark" />
     <meta property="og:title" content="Атлант" />
     <meta property="og:url" content="#" />
     <meta property="og:image" content="./src/images/turnkeyImg.png" />
     <meta property="twitter:card" content="atlant_large_image" />
-    <link rel="icon" type="image/svg+xml" href="#" />
+    <link rel="canonical" href="https://atlant.ru/" />
+    <link
+      rel="preload"
+      as="image"
+      href="./src/images/webp/turnkeyImg.webp"
+      type="image/webp"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./src/images/png/turnkeyImg.png"
+      type="image/png"
+    />
     <title>Атлант</title>
   </head>
   <body>
     <div class="app" id="app">
       <header class="header">
         <nav class="header__menu">
-          <img src="./src/images/logo.svg" alt="" class="logo header__logo" />
+          <img
+            src="./src/images/logo.svg"
+            alt="Логотип строительной компании Атлант"
+            class="logo header__logo"
+            width="242"
+            height="140"
+          />
           <ul class="header__list header__link-list">
             <li class="header__item">
-              <a href="#">Фундамент <br />вашего <br />успеха</a>
+              <a href="./basement.html">Фундамент <br />вашего <br />успеха</a>
             </li>
             <li class="header__item">
               <a href="#">234 объекта построили за <br />11 лет работы</a>
@@ -41,6 +68,18 @@
         </nav>
       </header>
       <main class="content">
+        <h1
+          style="
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+          "
+        >
+          Строительство домов под ключ в Краснодарском крае — Атлант
+        </h1>
         <section class="page__section" id="page_section-id-1">
           <div class="section__hero">
             <div class="hero__content">
@@ -83,8 +122,10 @@
                     class="item__circle"
                     ><img
                       src="./src/images/vk__link.svg"
-                      alt=""
+                      alt="ВКонтакте"
                       class="item__icon"
+                      width="32"
+                      height="32"
                   /></a>
                 </li>
                 <li class="link__list-item">
@@ -94,8 +135,10 @@
                     class="item__circle"
                     ><img
                       src="./src/images/tg__link.svg"
-                      alt=""
+                      alt="Telegram"
                       class="item__icon"
+                      width="32"
+                      height="32"
                   /></a>
                 </li>
                 <li class="link__list-item">
@@ -105,16 +148,20 @@
                     class="item__circle"
                     ><img
                       src="./src/images/yt__link.svg"
-                      alt=""
+                      alt="YouTube"
                       class="item__icon"
+                      width="32"
+                      height="32"
                   /></a>
                 </li>
                 <li class="link__list-item">
                   <a href="https://ok.ru/" target="_blank" class="item__circle"
                     ><img
                       src="./src/images/ok__link.svg"
-                      alt=""
+                      alt="Одноклассники"
                       class="item__icon"
+                      width="32"
+                      height="32"
                   /></a>
                 </li>
                 <li class="link__list-item">
@@ -124,8 +171,10 @@
                     class="item__circle"
                     ><img
                       src="./src/images/dzen__link.svg"
-                      alt=""
+                      alt="Дзен"
                       class="item__icon"
+                      width="32"
+                      height="32"
                   /></a>
                 </li>
               </ul>
@@ -205,29 +254,82 @@
               <h2 class="gallary__title">Поможем выбрать лучший район</h2>
               <div class="gallery__cities">
                 <div class="gallery__cities-card" id="gallery__cities-card1">
-                  <img src="./src/images/Yabl__card.png" alt="Яблоновский" />
+                  <picture>
+                    <source
+                      srcset="./src/images/webp/Yabl__card.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./src/images/Yabl__card.png"
+                      alt="Яблоновский — район для строительства дома"
+                      width="220"
+                      height="140"
+                    />
+                  </picture>
                   <p class="cities__card-title">Яблоновский</p>
                 </div>
                 <div class="gallery__cities-card" id="gallery__cities-card2">
-                  <img src="./src/images/Eliz__card.png" alt="Елизаветинская" />
+                  <picture>
+                    <source
+                      srcset="./src/images/webp/Eliz__card.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./src/images/Eliz__card.png"
+                      alt="Елизаветинская — район для строительства дома"
+                      width="220"
+                      height="140"
+                    />
+                  </picture>
+                  />
                   <p class="cities__card-title">Елизаветинская</p>
                 </div>
                 <div
                   class="gallery__cities-card gallery__cities-main-card"
                   id="gallery__cities-card3"
                 >
-                  <img src="./src/images/Znam__card.png" alt="Знаменский" />
+                  <picture>
+                    <source
+                      srcset="./src/images/webp/Znam__card.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./src/images/Znam__card.png"
+                      alt="Знаменский — район для строительства дома"
+                      width="220"
+                      height="140"
+                    />
+                  </picture>
                   <p class="cities__card-title">Знаменский</p>
                 </div>
                 <div class="gallery__cities-card" id="gallery__cities-card4">
-                  <img
-                    src="./src/images/SKors__card.png"
-                    alt="Старокорсунская"
-                  />
+                  <picture>
+                    <source
+                      srcset="./src/images/webp/SKors__card.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./src/images/SKors__card.png"
+                      alt="Старокорсунская — район для строительства дома"
+                      width="220"
+                      height="140"
+                    />
+                  </picture>
                   <p class="cities__card-title">Старокорсунская</p>
                 </div>
                 <div class="gallery__cities-card" id="gallery__cities-card5">
-                  <img src="./src/images/GKluch__card.png" alt="Горячий Ключ" />
+                  <picture>
+                    <source
+                      srcset="./src/images/webp/GKluch__card.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./src/images/GKluch__card.png"
+                      alt="Горячий Ключ — район для строительства дома"
+                      width="220"
+                      height="140"
+                    />
+                  </picture>
                   <p class="cities__card-title">Горячий Ключ</p>
                 </div>
               </div>
@@ -278,7 +380,18 @@
               <div class="video__gallary">
                 <div class="video__gallary-card" id="video__gallary-card1">
                   <a href="https://rutube.ru/" target="_blank">
-                    <img src="./src/images/videoTitleRT1.jpg" alt="" />
+                    <picture>
+                      <source
+                        srcset="./src/images/webp/videoTitleRT1.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./src/images/videoTitleRTs1.jpg"
+                        alt="Видео-отзыв клиента"
+                        width="320"
+                        height="180"
+                      />
+                    </picture>
                   </a>
                 </div>
                 <div
@@ -286,12 +399,34 @@
                   id="video__gallary-card2"
                 >
                   <a href="https://rutube.ru/" target="_blank">
-                    <img src="./src/images/videoTitleRT2.jpg" alt="" />
+                    <picture>
+                      <source
+                        srcset="./src/images/webp/videoTitleRT2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./src/images/videoTitleRT2.jpg"
+                        alt="Видео-отзыв клиента"
+                        width="320"
+                        height="180"
+                      />
+                    </picture>
                   </a>
                 </div>
                 <div class="video__gallary-card" id="video__gallary-card3">
                   <a href="https://rutube.ru/" target="_blank">
-                    <img src="./src/images/videoTitleRT3.jpg" alt="" />
+                    <picture>
+                      <source
+                        srcset="./src/images/webp/videoTitleRT1.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="./src/images/videoTitleRT1.jpg"
+                        alt="Видео-отзыв клиента"
+                        width="320"
+                        height="180"
+                      />
+                    </picture>
                   </a>
                 </div>
               </div>
@@ -325,7 +460,18 @@
               </div>
             </div>
             <div class="turnkey-service__img">
-              <img src="./src/images/turnkeyImg.png" alt="" />
+              <picture>
+                <source
+                  srcset="./src/images/webp/turnkeyImg.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./src/images/turnkeyImg.png"
+                  alt="Строительство дома под ключ"
+                  width="585"
+                  height="382"
+                />
+              </picture>
             </div>
           </div>
         </section>
@@ -337,66 +483,114 @@
             </h2>
             <div class="team__list">
               <div class="team__card">
-                <img
-                  src="./src/images/ISimonov.jpg"
-                  alt="Илья Симонов"
-                  class="team__card-img"
-                />
+                <picture>
+                  <source
+                    srcset="./src/images/webp/ISimonov.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./src/images/ISimonov.jpg"
+                    alt="Илья Симонов — главный инженер"
+                    class="team__card-img"
+                    width="180"
+                    height="180"
+                  />
+                </picture>
                 <p class="card__team-member-title">
                   <span class="member__position"> Главный инженер </span>
                   Илья Симонов
                 </p>
               </div>
               <div class="team__card">
-                <img
-                  src="./src/images/EKulikova.jpg"
-                  alt="Екатерина Куликова"
-                  class="team__card-img"
-                />
+                <picture>
+                  <source
+                    srcset="./src/images/webp/EKulikova.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./src/images/EKulikova.jpg"
+                    alt="Екатерина Куликова — помощник директора"
+                    class="team__card-img"
+                    width="180"
+                    height="180"
+                  />
+                </picture>
                 <p class="card__team-member-title">
                   <span class="member__position"> помощник директора </span>
                   Екатерина Куликова
                 </p>
               </div>
               <div class="team__card">
-                <img
-                  src="./src/images/APalpeshyak.jpg"
-                  alt="Александра Палещен"
-                  class="team__card-img"
-                />
+                <picture>
+                  <source
+                    srcset="./src/images/webp/APalpeshyak.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./src/images/APalpeshyak.jpg"
+                    alt="Александра Палепщак — главный архитектор"
+                    class="team__card-img"
+                    width="180"
+                    height="180"
+                  />
+                </picture>
                 <p class="card__team-member-title">
                   <span class="member__position"> Главный архитектор </span>
                   Александра Палепщак
                 </p>
               </div>
               <div class="team__card">
-                <img
-                  src="./src/images/DGrenelnaya.jpg"
-                  alt="Дарья Гребельная"
-                  class="team__card-img"
-                />
+                <picture>
+                  <source
+                    srcset="./src/images/webp/DGrenelnaya.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./src/images/DGrenelnaya.jpg"
+                    alt="Дарья Гребельная — архитектор"
+                    class="team__card-img"
+                    width="180"
+                    height="180"
+                  />
+                </picture>
                 <p class="card__team-member-title">
                   <span class="member__position"> архитектор </span>
                   Дарья Гребельная
                 </p>
               </div>
               <div class="team__card">
-                <img
-                  src="./src/images/SMeleshenko.jpg"
-                  alt="Семён Мелешенко"
-                  class="team__card-img"
-                />
+                <picture>
+                  <source
+                    srcset="./src/images/webp/SMeleshenko.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./src/images/SMeleshenko.jpg"
+                    alt="Семён Мелешенко — архитектор"
+                    class="team__card-img"
+                    width="180"
+                    height="180"
+                  />
+                </picture>
                 <p class="card__team-member-title">
                   <span class="member__position"> архитектор </span>
                   Семён Мелешенко
                 </p>
               </div>
               <div class="team__card">
-                <img
-                  src="./src/images/SVasilchenko.jpg"
-                  alt="Сергей Васильченко"
-                  class="team__card-img"
-                />
+                <picture>
+                  <source
+                    srcset="./src/images/webp/SVasilchenko.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./src/images/SVasilchenko.jpg"
+                    alt="Сергей Василенко — руководитель отдела продаж"
+                    class="team__card-img"
+                    width="180"
+                    height="180"
+                  />
+                </picture>
                 <p class="card__team-member-title">
                   <span class="member__position">
                     руководитель <br />
@@ -406,11 +600,19 @@
                 </p>
               </div>
               <div class="team__card">
-                <img
-                  src="./src/images/OIvanov.jpg"
-                  alt="Олег Иванов"
-                  class="team__card-img"
-                />
+                <picture>
+                  <source
+                    srcset="./src/images/webp/OIvanov.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./src/images/OIvanov.jpg"
+                    alt="Олег Иванов — специалист отдела снабжения"
+                    class="team__card-img"
+                    width="180"
+                    height="180"
+                  />
+                </picture>
                 <p class="card__team-member-title">
                   <span class="member__position">
                     специалист <br />отдела снабжения
@@ -419,22 +621,38 @@
                 </p>
               </div>
               <div class="team__card">
-                <img
-                  src="./src/images/IPakruchina.jpg"
-                  alt="Ирина Пакручина"
-                  class="team__card-img"
-                />
+                <picture>
+                  <source
+                    srcset="./src/images/webp/IPakruchina.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./src/images/IPakruchina.jpg"
+                    alt="Ирина Пакручина — юрист"
+                    class="team__card-img"
+                    width="180"
+                    height="180"
+                  />
+                </picture>
                 <p class="card__team-member-title">
                   <span class="member__position"> юрист </span>
                   Ирина Пакручина
                 </p>
               </div>
               <div class="team__card">
-                <img
-                  src="./src/images/ANorkin.jpg"
-                  alt="Алексей Норкин"
-                  class="team__card-img"
-                />
+                <picture>
+                  <source
+                    srcset="./src/images/webp/ANorkin.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./src/images/ANorkin.jpg"
+                    alt="Алексей Норкин — основатель компании"
+                    class="team__card-img"
+                    width="180"
+                    height="180"
+                  />
+                </picture>
                 <p class="card__team-member-title">
                   <span class="member__position"> основатель компании </span>
                   Алексей Норкин
@@ -451,11 +669,19 @@
         <section class="page__section" id="page_section-id-8">
           <div class="manager__section">
             <div class="manager__card">
-              <img
-                src="./src/images/manager.jpg"
-                alt="менеджер"
-                class="manager__card-img"
-              />
+              <picture>
+                <source
+                  srcset="./src/images/webp/manager.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./src/images/manager.jpg"
+                  alt="Персональный менеджер компании Атлант"
+                  class="manager__card-img"
+                  width="220"
+                  height="220"
+                />
+              </picture>
             </div>
             <div class="manager__section-content">
               <h2 class="manager__title text__title">
@@ -547,9 +773,9 @@
           </div>
         </section>
         <section class="page__section" id="page_section-id-10">
-          <div class="home-offer">
-            <div class="home-offer__content">
-              <h2 class="home-offer__title text__title">
+          <div class="offer">
+            <div class="offer__content">
+              <h2 class="offer__title text__title">
                 оставьте заявку на
                 <span class="text__light">строительство вашего дома</span>
                 мечты с сервисным обслуживанием в течении 12 месяцев и
@@ -558,16 +784,16 @@
                 >
               </h2>
             </div>
-            <div class="home-offer__contact">
-              <p class="home-offer__text">
+            <div class="offer__contact">
+              <p class="offer__text">
                 Чтобы получить консультацию специалиста и рассчитать подробную
                 смету, звоните по телефону
-                <br /><span class="text__light text__title home-offer__phone"
+                <br /><span class="text__light text__title offer__phone"
                   >8 800 770 01 33</span
                 >
                 или оставьте свои контакты, мы перезвоним вам в течении 15 минут
               </p>
-              <button class="button button__light button home-offer__button">
+              <button class="button button__light button offer__button">
                 перезвоните мне
               </button>
             </div>
@@ -690,8 +916,10 @@
                     class="item__circle"
                     ><img
                       src="./src/images/vk__link.svg"
-                      alt=""
+                      alt="ВКонтакте"
                       class="item__icon"
+                      width="32"
+                      height="32"
                   /></a>
                 </li>
                 <li class="link__list-item">
@@ -701,8 +929,10 @@
                     class="item__circle"
                     ><img
                       src="./src/images/tg__link.svg"
-                      alt=""
+                      alt="Telegram"
                       class="item__icon"
+                      width="32"
+                      height="32"
                   /></a>
                 </li>
                 <li class="link__list-item">
@@ -712,16 +942,20 @@
                     class="item__circle"
                     ><img
                       src="./src/images/yt__link.svg"
-                      alt=""
+                      alt="YouTube"
                       class="item__icon"
+                      width="32"
+                      height="32"
                   /></a>
                 </li>
                 <li class="link__list-item">
                   <a href="https://ok.ru/" target="_blank" class="item__circle"
                     ><img
                       src="./src/images/ok__link.svg"
-                      alt=""
+                      alt="Одноклассники"
                       class="item__icon"
+                      width="32"
+                      height="32"
                   /></a>
                 </li>
                 <li class="link__list-item">
@@ -731,8 +965,10 @@
                     class="item__circle"
                     ><img
                       src="./src/images/dzen__link.svg"
-                      alt=""
+                      alt="Дзен"
                       class="item__icon"
+                      width="32"
+                      height="32"
                   /></a>
                 </li>
               </ul>

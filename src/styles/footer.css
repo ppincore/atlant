@@ -5,6 +5,7 @@
   box-sizing: border-box;
   color: #ffffff;
   position: relative;
+  /* flex-shrink: 0; */
 }
 .footer::before {
   content: "";
@@ -19,7 +20,8 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-left: 291px;
+    justify-content: center;
+  /* margin-left: 291px; */
   gap: 33px;
 }
 .footer__content-wrapper {

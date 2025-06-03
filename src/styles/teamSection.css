@@ -34,7 +34,11 @@
   color: white;
   position: relative;
 }
-
+.team__card picture{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .team__card-img {
   /* transform: scale(1.2); */
   width: 100%;

@@ -15,7 +15,7 @@
   background-image: url("../images/backgrounds/BG_section2.jpg");
 }
 .page__section[id="page_section-id-2"]::after {
-  background-color: rgba(82, 79, 76, 0.3);
+  background-color: rgba(82, 79, 76, 0.6);
 }
 
 /* PAGE SECTION 3 */
@@ -29,6 +29,7 @@
 
 .page__section[id="page_section-id-4"]::before {
   background-image: url("../images/backgrounds/BG_section4.jpg");
+  
 }
 
 /* PAGE SECTION 5 */
@@ -61,12 +62,16 @@
 
 .page__section[id="page_section-id-8"]::before {
   background-image: url("../images/backgrounds/BG_section8.jpg");
+  /* background-size: 100% 50%; */
+  background-position: center;
+  background-size: contain;
 }
 
 /* PAGE SECTION 9 */
 
 .page__section[id="page_section-id-9"]::before {
   background-image: url("../images/backgrounds/BG_section9.jpg");
+  background-position: -350px;
 }
 
 /* PAGE SECTION 10 */

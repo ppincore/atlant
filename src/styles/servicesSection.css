@@ -53,9 +53,63 @@
   }
 }
 
-@media (768px <= width <= 1728px) {
-  /* Стили для MacBook Pro с разрешением 1728x1117 */
+@media (width <=1366px) {
+  .section__services {
+    width: 70%;
+    gap: 25px;
+  }
+  .services__content {
+    gap: 27px;
+  }
+  .services__heading {
+    font-size: 35px;
+  }
+  .services__description {
+    font-size: 25px;
+  }
+  .services__button-container {
+    align-items: end;
+  }
+  .services__button {
+    font-size: 15px;
+    width: 70%;
+    word-spacing: 0.1rem;
+    
+  }
+  .button__container-description {
+    width: 90%;
+    font-size: 18px;
+    
+  }
 }
 
-@media (width <= 767px) {
+@media (width <= 768px) {
+    .section__services {
+    width: 95%;
+    gap: 25px;
+  }
+  .services__content {
+    width: 100%;
+    gap: 27px;
+  }
+  .services__heading {
+    font-size: 35px;
+  }
+  .services__description {
+    font-size: 25px;
+  }
+  .services__button-container {
+    align-items: end;
+  }
+  .services__button {
+    font-size: 15px;
+    width: 70%;
+    word-spacing: 0.1rem;
+    
+  }
+  .button__container-description {
+    width: 90%;
+    font-size: 18px;
+    
+  }
 }

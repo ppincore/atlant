@@ -1,0 +1,196 @@
+@use "../styles/globals" as *;
+@use "../styles/header" as *;
+@use "../styles/footer" as *;
+@use "../styles/style.css" as *;
+@use "../styles/globals.css" as *;
+@use "../styles/style.css" as *;
+@use "../fonts/fonts.css" as *;
+@use "../styles/header.css" as *;
+@use "../styles/heroSection.css" as *;
+@use "../styles/servicesSection.css" as *;
+@use "../styles/tourSection.css" as *;
+@use "../styles/gallary.css" as *;
+@use "../styles/constructionPlanning.css" as *;
+@use "../styles/videoInterview.css" as *;
+@use "../styles/turnKeyService.css" as *;
+@use "../styles/teamSection.css" as *;
+@use "../styles/managerSection.css" as *;
+@use "../styles/legalSupportSection.css" as *;
+@use "../styles/timer.css" as *;
+@use "../styles/homeOffer.css" as *;
+@use "../styles/footer.css" as *;
+// @use "../styles/backgrounds.css" as *;
+
+.basement {
+  background-color: #3f3f3f;
+
+  .header {
+  }
+  .hero__content {
+    width: 100%;
+  }
+  .hero__title {
+    width: 80%;
+  }
+  .hero__title::before {
+    background-color: #ffffff;
+    box-shadow: 0 1px 6px #ffffff;
+  }
+  .hero__button {
+    width: 602px;
+    text-transform: lowercase;
+    font-size: 32px;
+  }
+  .page__section {
+  }
+  .description-underline {
+    text-underline-offset: 10px;
+  }
+
+  .section__services {
+    margin-left: 100px;
+    gap: 35px;
+    // width: 1300px;
+  }
+  .services__content {
+    width: 100%;
+    gap: 60px;
+  }
+  .services__heading {
+    display: block;
+    .description-underline {
+      text-underline-offset: 8px;
+    }
+    width: 100%;
+    text-transform: uppercase;
+    text-align: end;
+    word-spacing: 0.0025rem;
+  }
+  .text__light {
+  }
+  .services__description {
+    font-size: 32px;
+    font-weight: 400;
+    width: 900px;
+  }
+  .services__button-container {
+    margin-right: 190px;
+    width: 420px;
+  }
+
+  .promo__content {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    align-items: start;
+    width: 100%;
+    margin-left: 300px;
+  }
+  .promo__text {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 650px;
+    // letter-spacing: 0.0002rem;
+    word-spacing: 0.032rem;
+  }
+  .promo__title {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 120%;
+  }
+  .promo__description {
+    font-size: 32px;
+    width: 650px;
+    line-height: 117%;
+    word-spacing: 0.04rem;
+  }
+  .promo__button-container {
+    width: 450px;
+  }
+  .promo__button {
+    font-size: 28px;
+    word-spacing: 0.1rem;
+  }
+
+  .offer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .offer__title {
+    width: 822px;
+  }
+  .text__title {
+    letter-spacing: 0.11rem;
+  }
+  .offer__description {
+    width: 60%;
+    position: relative;
+    overflow: visible;
+    line-height: 117%;
+    letter-spacing: 0.02rem;
+  }
+  .offer__description::before {
+    position: absolute;
+    content: "С ФОТО И ВИДЕО ОТЧЕТАМИ КАЖДОГО ЭТАПА СТРОИТЕЛЬСТВА";
+    line-height: 120%;
+    overflow: hidden;
+    font-size: 17px;
+    padding: 12px 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -36px;
+    right: -180px;
+    width: 220px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid #b49b7d;
+    border-radius: 12px;
+    transform: rotate(-6deg);
+    transition: transform 0.3s ease;
+    z-index: 2;
+  }
+  .page__section[id="page_section-id-1"]::before {
+    background-image: url("../images/backgrounds/basement__BG1.png");
+    background-position: bottom center; /* или bottom */
+    filter: blur(3px);
+  }
+  .page__section[id="page_section-id-1"]::after {
+    background-color: rgba(82, 79, 76, 0.6);
+  }
+
+  /* PAGE SECTION 2 */
+
+  .page__section[id="page_section-id-2"]::before {
+    background-image: url("../images/backgrounds/BG_section2.jpg");
+  }
+  .page__section[id="page_section-id-2"]::after {
+    background-color: rgba(82, 79, 76, 0.3);
+  }
+
+  /* PAGE SECTION 3 */
+
+  .page__section[id="page_section-id-3"]::before {
+    background-image: url("../images/backgrounds/BG_section3.jpg");
+  }
+
+  /* PAGE SECTION 4 */
+
+  .page__section[id="page_section-id-4"]::before {
+    background-image: url("../images/backgrounds/BG_section4.jpg");
+  }
+
+  /* PAGE SECTION 5 */
+
+  .page__section[id="page_section-id-5"]::before {
+    background-image: url("../images/backgrounds/BG_section5.jpg");
+  }
+}
+
+
+
+@media (width >= 1024px) {
+}

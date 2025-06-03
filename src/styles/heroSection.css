@@ -15,7 +15,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 45px 0 23px 23px;
+  padding: 25px 0 23px 23px;
+  font-weight: 700;
 }
 
 .hero__title::before {
@@ -97,9 +98,88 @@
   }
 }
 
-@media (768px <= width <= 1728px) {
-  /* Стили для MacBook Pro с разрешением 1728x1117 */
+@media ( 1366px >= width ) {
+  .section__hero{
+    margin-top: 50px;
+    width: 70%;
+    gap: 25px;
+  }
+  .hero__heading{
+      font-size: 35px;
+  }
+  .hero__description{
+    font-size: 20px;
+  }
+  .hero__content{
+      width: 75%;
+  }
+  .hero__button-container{
+    width: 100%;
+  }
+  .hero__button{
+    width: 50%;
+    height: 70px;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .hero__link{
+    gap: 10px;
+    width: 300px;
+  }
+  .hero__link-description{
+    font-size: 13px ;
+    /* width: 75%; */
+  }
+  .link-list{
+
+    justify-content: start;
+    gap: 15px;
+  }
+  .item__circle{
+    width: 50px;
+    height: 50px;
+  }
 }
 
-@media (width <= 767px) {
+@media (768px >= width) {
+    .section__hero{
+    margin-top: 60px;
+    width: 95%;
+    gap: 25px;
+  }
+  .hero__heading{
+      font-size: 35px;
+  }
+  .hero__description{
+    font-size: 1em;
+  }
+  .hero__content{
+      width: 75%;
+  }
+  .hero__button-container{
+    width: 100%;
+  }
+  .hero__button{
+    width: 50%;
+    height: 70px;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .hero__link{
+    gap: 10px;
+    width: 300px;
+  }
+  .hero__link-description{
+    font-size: 13px ;
+    /* width: 75%; */
+  }
+  .link-list{
+
+    justify-content: start;
+    gap: 15px;
+  }
+  .item__circle{
+    width: 50px;
+    height: 50px;
+  }
 }

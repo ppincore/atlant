@@ -13,7 +13,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-
 }
 .tour__title {
   display: flex;
@@ -56,7 +55,7 @@
 .card__founder {
   width: 312px;
   height: 457px;
-    border-radius: 35px;
+  border-radius: 35px;
   background-image: url("../images/founder_cardImage.jpg");
   background-size: 120%;
   background-position: right;
@@ -71,17 +70,91 @@
   letter-spacing: 0.06rem;
 }
 
-
 @media (width >= 1729px) {
-  .tour__section{
+  .tour__section {
     width: 100%;
   }
 }
 
-@media (768px <= width <= 1728px) {
-  /* Стили для MacBook Pro с разрешением 1728x1117 */
+@media (width <= 1366px) {
+  .tour__section {
+    width: 70%;
+    gap: 40px;
+  }
+  .tour__title {
+    padding: 0;
+    gap: 30px;
+  }
+  .tour__heading {
+    font-size: 35px;
+  }
+  .tour__description {
+    font-size: 25px;
+  }
+
+  .card__founder {
+    height: 350px;
+    width: 250px;
+    border-radius: 25px;
+  }
+  .card__description {
+    font-size: 15px;
+  }
+  .tour__button-container {
+    padding: 0;
+    width: 65%;
+    align-self: end;
+    align-items: end;
+    gap: 12px;
+  }
+  .tour__button {
+    font-size: 15px;
+    height: 75px;
+    width: 75%;
+  }
+  .tour__button-description {
+    font-size: 15px;
+  }
 }
 
-@media (width <= 767px) {
+@media (width <= 768px) {
+    .tour__section {
+    width: 95%;
+    gap: 40px;
+  }
+  .tour__title {
+    padding: 0;
+    gap: 30px;
+  }
+  .tour__heading {
+    font-size: 35px;
+  }
+  .tour__description {
+    font-size: 25px;
+  }
 
+  .card__founder {
+    height: 350px;
+    width: 250px;
+    border-radius: 25px;
+  }
+  .card__description {
+    font-size: 15px;
+  }
+  .tour__button-container {
+    padding: 0;
+    width: 65%;
+    align-self: end;
+    align-items: end;
+    gap: 12px;
+  }
+  .tour__button {
+    font-size: 15px;
+    height: 75px;
+    width: 75%;
+    padding: 5px 17px 0px 17px;
+  }
+  .tour__button-description {
+    font-size: 15px;
+  } 
 }

@@ -1,4 +1,4 @@
-export function setHeaderOpacityOnScroll(header) {
+export function setHeaderOpacityOnScroll(header,color) {
   let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  header.style.backgroundColor = scrolled ? "#524F4C" : "transparent";
+  header.style.backgroundColor = scrolled ? color : "transparent";
 }

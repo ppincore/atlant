@@ -58,7 +58,11 @@
   overflow: hidden; /* Скрываем части изображения, выходящие за пределы контейнера */
   transition: transform 0.5s, width 0.5s, height 0.5s;
 }
-
+.video__gallary-card picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .video__gallary-main-card {
   width: 465px;
   height: 260px;
