@@ -64,18 +64,21 @@
   background-image: url("../images/backgrounds/BG_section8.jpg");
   /* background-size: 100% 50%; */
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 /* PAGE SECTION 9 */
 
 .page__section[id="page_section-id-9"]::before {
   background-image: url("../images/backgrounds/BG_section9.jpg");
-  background-position: -350px;
+  /* background-position: -350px; */
 }
 
 /* PAGE SECTION 10 */
 
 .page__section[id="page_section-id-10"]::before {
   background-image: url('');
+}
+.page__section[id="page_section-id-10"] {
+  
 }

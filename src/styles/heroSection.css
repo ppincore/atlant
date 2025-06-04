@@ -79,6 +79,7 @@
   .section__hero {
     width: 100%;
     gap: 40px;
+    margin-top: 100px;
   }
   .hero__heading {
     font-size: 40px;
@@ -86,6 +87,7 @@
   }
   .hero__description {
     font-size: 27px;
+    
   }
   .hero__title {
     gap: 15px;
@@ -95,6 +97,9 @@
     width: 570px;
     height: 100px;
     padding: 17px 13px;
+  }
+  .hero__button {
+    width: 100%;
   }
 }
 

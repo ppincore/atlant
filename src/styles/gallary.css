@@ -121,7 +121,10 @@
   }
   .gallary__wrapp{
     transform: scale(0.9);
-    margin-top: 90px;
+
+  }
+  .gallary__section-content {
+    margin: 0;
   }
 }
 

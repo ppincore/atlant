@@ -50,11 +50,11 @@
 .legal-support__button-description {
   /* align-self: end; */
   font-style: italic;
-  width: 500px;
+  width: 550px;
   text-align: end;
   font-size: 19px;
   font-weight: 600;
-  margin-left: 180px;
+  margin-left: 130px;
   letter-spacing: -0.01rem;
   line-height: 135%;
 }
@@ -79,6 +79,10 @@
   /* Стили для MacBook Pro с разрешением 1728x1117 */
 }
 
-@media (width <= 767px) {
-
+@media (1366px >= width) {
+  .legal-support__content {
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
 }

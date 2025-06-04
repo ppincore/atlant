@@ -37,7 +37,7 @@
   width: 46em;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 12px;
 }
 .tour__button-description {
   font-size: 20px;

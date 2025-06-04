@@ -41,18 +41,26 @@
 
 @media (width >= 1729px) {
   .construction-planning {
-    gap: 8px ;
+    gap: 25px ;
   }
   .construction-planning__title {
     width: 830px;
-    font-size: 27px;
+    font-size: 25px;
   }
   .construction-planning__content {
-    gap: 1px;
+    gap: 5px;
   }
   .construction-planning__description{
     padding: 8px;
+    font-size: 23px;
+    width: 604px;
+    margin-right: 220px;
   }
+  .construction__button-container {
+  align-self: end;
+  width: 465px;
+  margin-right: 70px;
+}
 }
 
 @media (768px <= width <= 1728px) {
