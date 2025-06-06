@@ -28,8 +28,9 @@
     gap: 65px;
   }
   .hero__content {
-    gap: 34px;
-    width:70%;
+    gap: 54px;
+    width: 70%;
+    margin-top: 20px;
   }
   .hero__heading {
     // width: 85%;
@@ -47,13 +48,14 @@
   }
   .hero__link {
     width: 531px;
+    margin-right: 120px;
   }
   .gift-well {
     display: flex;
     flex-direction: column;
-    gap: 33px;
+    gap: 48px;
     width: 75%;
-    margin-left: 3.125em;
+    margin-left: 5.125em;
   }
   .gift-well__info {
     display: flex;
@@ -65,11 +67,16 @@
     font-weight: 600;
     text-transform: uppercase;
     width: 75%;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    word-spacing: 0.1em;
   }
   .gift-well__desc {
     font-size: 32px;
     font-weight: 500;
-    width: 54.29%;
+    width: 60%;
+    word-spacing: 0.1em;
+    line-height: 120%;
   }
   .gift-well__action {
     width: 54.29%;
@@ -80,15 +87,20 @@
   .gift-well__offer {
     display: block;
     text-transform: uppercase;
+    font-style: italic;
     font-size: 20px;
+    letter-spacing: -0.06em;
+    line-height: 130%;
     font-weight: 500;
     border: 2px solid #b49b7d;
     box-sizing: border-box;
     background-color: rgba(180, 155, 125, 0.2);
-    width: 369px;
+    width: 321px;
+    height: 120px;
     transform: rotate(-4.82deg);
     border-radius: 12px;
-    padding: 10px 15px;
+    padding: 10px 5px;
+    margin-left: 5px;
   }
   .gift-well__button-container {
     overflow: visible;
@@ -96,14 +108,13 @@
     height: 88px;
     align-self: end;
   }
-
   .gift-well__button {
     position: relative;
     overflow: visible;
     z-index: 1;
     width: 100%;
     height: 100%;
-    
+
     &::before {
       content: "";
       position: absolute;
@@ -130,7 +141,7 @@
     letter-spacing: 0.05em;
     font-size: 32px;
     padding: 0;
-    width: 75%;
+    width: 100%;
   }
   .reviews-promo {
     width: 100%;
@@ -213,8 +224,8 @@
   }
   .services__button-container {
     display: flex;
-    justify-content: end; 
-    align-items: center; 
+    justify-content: end;
+    align-items: center;
     width: 100%;
     height: 88px;
   }
