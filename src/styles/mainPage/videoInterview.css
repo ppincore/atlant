@@ -61,20 +61,20 @@
 }
 
 .video__gallary-card::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(174, 174, 174, 0.8);
   z-index: 2;
 }
-.video__gallary-card::after{
-  content: '';
+.video__gallary-card::after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   inset: 0 0 0 0;
-  background-image: url('../images/playButton.png');
+  background-image: url("../images/playButton.png");
   background-position: center;
   background-repeat: no-repeat;
   z-index: 3;
@@ -89,6 +89,10 @@
   width: 100%;
   height: 100%;
 }
+.video__gallary-main-card::after {
+  background-size: 105px 105px;
+}
+
 .video__gallary-main-card {
   width: 465px;
   height: 260px;
@@ -131,4 +135,32 @@
 }
 
 @media (width <= 767px) {
+}
+@media (width <= 430px) {
+  .videoInterview__section {
+    width: 100%;
+    gap: 2em;
+  }
+  .video__gallary-wrap {
+    gap: 2em;
+  }
+  .videoInterview__title-container {
+    width: 95%;
+    align-self: center;
+  }
+  .videoInterview__title {
+    font-size: 2em;
+  }
+  .videoInterview__description {
+    font-size: 1.5em;
+  }
+  .video__gallery-button-contaier {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .video__gallary-button {
+    width: 95%;
+  }
 }

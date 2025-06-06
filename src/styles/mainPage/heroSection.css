@@ -1,0 +1,215 @@
+.section__hero {
+  width: 70em; /* 1120px */
+  display: flex;
+  flex-direction: column;
+  gap: 2.8125em; /* 45px */
+  margin-top: 6.25em; /* 100px */
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  width: 64.375em; /* 1030px */
+}
+.hero__title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em; /* 24px */
+  padding: 1.5625em 0 1.4375em 1.4375em; /* 25px 0 23px 23px */
+  font-weight: 700;
+}
+
+.hero__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.25em; /* 4px */
+  background-color: #dabd91;
+  box-shadow: 0 0.0625em 0.375em #dabd91; /* 1px 6px */
+}
+
+.hero__heading {
+  font-weight: 700;
+  font-size: 3.375em; /* 54px */
+  line-height: 119%;
+  letter-spacing: 0.1em;
+}
+
+.hero__description {
+  line-height: 119%;
+  font-weight: 700;
+  font-size: 2.0625em; /* 33px */
+  width: 90%;
+  letter-spacing: 0.07em;
+}
+.hero__button-container {
+  display: flex;
+  width: 70%;
+  padding-top: 1.0625em; /* 17px */
+  padding-left: 1.25em; /* 20px */
+}
+.hero__link {
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0625em; /* 17px */
+  width: 32.1875em; /* 515px */
+}
+.hero__link-description {
+  font-size: 1.25em; /* 20px */
+  text-align: start;
+  font-style: italic;
+  line-height: 125%;
+  letter-spacing: 0.07em;
+}
+
+.hero__button {
+  width: 45em; /* 720px */
+  height: 6.687em; /* 110px */
+  word-spacing: 0.4em;
+}
+
+/* --- Адаптив --- */
+@media (width >= 1728px) {
+  .hero__content {
+    margin-left: 3.125em; /* 50px */
+  }
+  .section__hero {
+    width: 100%;
+    gap: 2.5em; /* 40px */
+    
+  }
+  .hero__heading {
+    font-size: 2.5em; /* 40px */
+    /* width: 50em; */
+  }
+  .hero__description {
+    font-size: 1.6875em; /* 27px */
+  }
+  .hero__title {
+    gap: 0.9375em; /* 15px */
+    padding: 1.875em 0 1.4375em 1.4375em; /* 30px 0 23px 23px */
+  }
+  .hero__button {
+    width: 35.625em; /* 570px */
+    max-height: 107px; /* 100px */
+    padding: 1.0625em 0.8125em; /* 17px 13px */
+  }
+  .hero__button {
+    width: 100%;
+  }
+}
+
+/* --- Мобильные и планшеты --- */
+/*
+@media (1366px >= width) {
+  .section__hero {
+    margin-top: 3.125em; 
+    width: 70%;
+    gap: 1.5625em; 
+  }
+  .hero__heading {
+    font-size: 2.1875em; 
+  }
+  .hero__description {
+    font-size: 1.25em; 
+  }
+  .hero__content {
+    width: 75%;
+  }
+  .hero__button-container {
+    width: 100%;
+  }
+  .hero__button {
+    width: 50%;
+    height: 4.375em; 
+    font-size: 0.9375em; 
+    padding: 0.625em; 
+  }
+  .hero__link {
+    gap: 0.625em; 
+    width: 18.75em; 
+  }
+  .hero__link-description {
+    font-size: 0.8125em; 
+  }
+  .link-list {
+    justify-content: start;
+    gap: 0.9375em; 
+  }
+  .item__circle {
+    width: 3.125em; 
+    height: 3.125em; 
+  }
+}
+*/
+
+@media (width <= 768px) {
+  .section__hero {
+    margin-top: 3.75em; /* 60px */
+    width: 95%;
+    gap: 1.5625em; /* 25px */
+  }
+  .hero__heading {
+    font-size: 2.1875em; /* 35px */
+  }
+  .hero__description {
+    font-size: 1em;
+  }
+  .hero__content {
+    width: 75%;
+  }
+  .hero__button-container {
+    width: 100%;
+  }
+  .hero__button {
+    width: 100%;
+    height: 4.375em; /* 70px */
+    font-size: 0.9375em; /* 15px */
+    padding: 0.625em; /* 10px */
+  }
+  .hero__link {
+    gap: 0.625em; /* 10px */
+    width: 18.75em; /* 300px */
+  }
+  .hero__link-description {
+    font-size: 0.8125em; /* 13px */
+  }
+  .link-list {
+    justify-content: start;
+    gap: 0.9375em; /* 15px */
+  }
+  .item__circle {
+    width: 3.125em; /* 50px */
+    height: 3.125em; /* 50px */
+  }
+}
+
+@media (width <= 430px) {
+  .section__hero {
+    margin-top: 3em;
+  }
+  .hero__content {
+    width: 100%;
+    align-items: center;
+    gap: 0.9375em; /* 15px */
+  }
+  
+  .hero__title {
+    /* Можно добавить мобильные стили */
+  }
+  .hero__button {
+    width: 100%;
+    height: 4.375em; /* 70px */
+    font-size: 0.9375em; /* 15px */
+    padding: 0.625em; /* 10px */
+  }
+  .hero__button-container {
+    padding: 0;
+  }
+  .section__hero .hero__link{
+    align-self: center;
+  }
+}

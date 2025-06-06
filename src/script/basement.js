@@ -1,5 +1,5 @@
 
-import "../styles/basement.scss"
+import "../styles/basementPage/basement.scss"
 import { setHeaderOpacityOnScroll } from "./setHeaderOpacityOnScroll";
 const headerElem = document.querySelector(".header");
 

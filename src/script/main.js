@@ -1,22 +1,22 @@
-import "../styles/style.css";
-import "../styles/globals.css";
-import "../styles/style.css";
+
+import "../styles/mainPage/globals.css";
+import "../styles/mainPage/style.css";
 import "../fonts/fonts.css";
-import "../styles/header.css";
-import "../styles/heroSection.css";
-import "../styles/servicesSection.css";
-import "../styles/tourSection.css";
-import "../styles/gallary.css";
-import "../styles/constructionPlanning.css";
-import "../styles/videoInterview.css";
-import "../styles/turnKeyService.css";
-import "../styles/teamSection.css";
-import "../styles/managerSection.css";
-import "../styles/legalSupportSection.css";
-import "../styles/timer.css";
-import "../styles/homeOffer.css";
-import "../styles/footer.css";
-import "../styles/backgrounds.css"
+import "../styles/mainPage/header.css";
+import "../styles/mainPage/heroSection.css";
+import "../styles/mainPage/servicesSection.css";
+import "../styles/mainPage/tourSection.css";
+import "../styles/mainPage/gallary.css";
+import "../styles/mainPage/constructionPlanning.css";
+import "../styles/mainPage/videoInterview.css";
+import "../styles/mainPage/turnKeyService.css";
+import "../styles/mainPage/teamSection.css";
+import "../styles/mainPage/managerSection.css";
+import "../styles/mainPage/legalSupportSection.css";
+import "../styles/mainPage/timer.css";
+import "../styles/mainPage/homeOffer.css";
+import "../styles/mainPage/footer.css";
+import "../styles/mainPage/backgrounds.css"
 
 
 import { setHeaderOpacityOnScroll } from "./setHeaderOpacityOnScroll";
@@ -146,3 +146,9 @@ updateTimer();
 
 
 
+// Пример для main.js
+const burger = document.querySelector('.header__burger');
+const menu = document.querySelector('.header__list');
+burger.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});

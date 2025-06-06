@@ -76,3 +76,38 @@
 @media (width <= 767px) {
 
 }
+
+@media (width <= 430px) {
+  .legal-support__timer-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  .timer {
+    flex-direction: row;
+    gap: 0.75em; /* 12px */
+    width: 100%;
+    justify-content: center;
+    min-height: unset;
+  }
+  .timer-unit {
+    width: 4.5em;   /* 72px */
+    height: 4.5em;  /* 72px */
+  }
+  .timer-unit::before {
+    width: 4.5em;
+    height: 4.5em;
+  }
+  .timer-inner {
+    width: 4em;     /* 64px */
+    height: 4em;    /* 64px */
+    font-size: 0.9em;
+  }
+  .timer-title {
+    font-size: 1em; /* 16px */
+  }
+  .timer-value {
+    font-size: 1.5em; /* 24px */
+  }
+}

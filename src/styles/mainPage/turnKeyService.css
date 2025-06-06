@@ -19,15 +19,14 @@
 .turnkey-service__title-wrapper::after {
   content: "";
   position: absolute;
-  width: 200px;
-  height: 200px;
-  right: -50px;
-  transform: rotate(32.45deg) scale(1.11);
-  bottom: -105px;
   background-image: url("/src/images/keys.png");
   background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 23px;
+  transform: rotate(32.45deg) scale(1.11);
+  width: 200px;
+  height: 200px;
+  right: -50px;
+  bottom: -105px;
   z-index: -1;
 }
 .turnkey-service__title {
@@ -82,7 +81,7 @@
   z-index: -1;
 }
 
-.turnkey-service__img::before{
+.turnkey-service__img::before {
   content: "";
   position: absolute;
   background-image: url("../images/spiral1v2.png");
@@ -96,7 +95,7 @@
   z-index: 2;
 }
 
-.turnkey-service__img-decor::before{
+.turnkey-service__img-decor::before {
   content: "";
   position: absolute;
   background-image: url("../images/spiral1v3.png");
@@ -110,12 +109,11 @@
   z-index: 2;
 }
 
-
 @media (width >= 1729px) {
-  .turnkey-service__wrapper{
+  .turnkey-service__wrapper {
     width: 100%;
   }
-  .turnkey-service__content{
+  .turnkey-service__content {
     padding: 0;
   }
 }
@@ -124,6 +122,80 @@
   /* Стили для MacBook Pro с разрешением 1728x1117 */
 }
 
-@media (width <= 767px) {
-
+@media (width <= 430px) {
+  .turnkey-service__wrapper {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 1em;
+  }
+  .turnkey-service__content {
+    padding: 0;
+    align-items: center;
+    gap: 1em;
+  }
+  .turnkey-service__title-wrapper {
+    width: 95%;
+    gap: 1em;
+    z-index: 3;
+  }
+  .turnkey-service__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .turnkey-service__img picture {
+    display: block;
+    width: 95%;
+    height: 95%;
+  }
+  .turnkey-service__img picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  .turnkey-service__img-decor::before {
+    bottom: -57px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+  .turnkey-service__img::before {
+    top: -36px;
+    right: -15px;
+    width: 100px;
+    height: 100px;
+  }
+  .turnkey-service__img::after {
+    top: 60px;
+    left: -47px;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+  }
+  .turnkey-service__title-wrapper::after {
+    transform: rotate(-95.45deg) scale(1.11);
+    width: 160px;
+    height: 160px;
+    top: 150px;
+    right: 0;
+    z-index: -2;
+  }
+  .turnkey-service__img {
+    width: 100%;
+    height: auto;
+  }
+  .turnkey-service__title {
+    font-size: 2em;
+  }
+  .turnkey-service__button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .turnkey-service__button {
+    width: 95%;
+    font-size: 1.1em;
+  }
 }

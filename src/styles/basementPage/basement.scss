@@ -1,0 +1,336 @@
+@use "../mainPage/globals.css" as *;
+@use "../mainPage/header.css" as *;
+@use "../mainPage/footer.css" as *;
+@use "../mainPage/style.css" as *;
+// @use "../styles/globals.css" as *;
+// @use "../styles/style.css" as *;
+// @use "../fonts/fonts.css" as *;
+// @use "../styles/header.css" as *;
+@use "../mainPage/heroSection.css" as *;
+// @use "../styles/servicesSection.css" as *;
+// @use "../styles/tourSection.css" as *;
+// @use "../styles/gallary.css" as *;
+// @use "../styles/constructionPlanning.css" as *;
+// @use "../styles/videoInterview.css" as *;
+// @use "../styles/turnKeyService.css" as *;
+// @use "../styles/teamSection.css" as *;
+// @use "../styles/managerSection.css" as *;
+// @use "../styles/legalSupportSection.css" as *;
+// @use "../styles/timer.css" as *;
+@use "../mainPage/homeOffer.css" as *;
+// @use "../styles/footer.css" as *;
+// // @use "../styles/backgrounds.css" as *;
+
+.basement {
+  .section__hero {
+    margin: 0;
+    width: 75%;
+    gap: 65px;
+  }
+  .hero__content {
+    gap: 34px;
+    width:70%;
+  }
+  .hero__heading {
+    // width: 85%;
+    font-weight: 700;
+    font-size: 54px;
+  }
+  .hero__title {
+    // width: 80%;
+    word-spacing: 0.2rem;
+  }
+  .hero__description {
+    font-size: 33px;
+    line-height: 120%;
+    // width: 80%;
+  }
+  .hero__link {
+    width: 531px;
+  }
+  .gift-well {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    width: 75%;
+    margin-left: 3.125em;
+  }
+  .gift-well__info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .gift-well__title {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 75%;
+  }
+  .gift-well__desc {
+    font-size: 32px;
+    font-weight: 500;
+    width: 54.29%;
+  }
+  .gift-well__action {
+    width: 54.29%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .gift-well__offer {
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid #b49b7d;
+    box-sizing: border-box;
+    background-color: rgba(180, 155, 125, 0.2);
+    width: 369px;
+    transform: rotate(-4.82deg);
+    border-radius: 12px;
+    padding: 10px 15px;
+  }
+  .gift-well__button-container {
+    overflow: visible;
+    width: 491px;
+    height: 88px;
+    align-self: end;
+  }
+
+  .gift-well__button {
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: -110px;
+      top: 50%;
+      transform: translateY(-50%) rotate(6deg);
+      background-image: url("../../images/gift.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 50%;
+      left: -80px;
+      width: 90px;
+      height: 90px;
+      z-index: 2;
+      pointer-events: none;
+      display: block;
+    }
+  }
+  .hero__button-container {
+    padding-top: 0;
+  }
+  .hero__button {
+    width: 602px;
+    letter-spacing: 0.05em;
+    font-size: 32px;
+    padding: 0;
+    width: 75%;
+  }
+  .reviews-promo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    justify-content: center;
+    align-items: center;
+  }
+  .reviews-promo__content {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    gap: 113px;
+    margin-right: 250px;
+  }
+  .reviews-promo__title {
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: end;
+    max-width: 850px;
+  }
+  .reviews-promo__description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 96px;
+    margin-right: 50px;
+  }
+  .reviews-promo__description {
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    max-width: 923px;
+  }
+  .reviews-promo__button-container {
+    height: 78px;
+  }
+  .reviews-promo__button {
+    font-size: 27px;
+    height: 100%;
+    width: 364px;
+    text-align: center;
+    padding: 5px 10px 0 10px;
+  }
+  .description-underline {
+    text-underline-offset: 10px;
+  }
+  .section__services {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 95%;
+  }
+  .services__content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    gap: 60px;
+  }
+  .services__heading {
+    display: block;
+    font-size: 40px;
+    .description-underline {
+      text-underline-offset: 8px;
+    }
+    width: 100%;
+    text-transform: uppercase;
+    text-align: end;
+    word-spacing: 0.0025rem;
+  }
+  .services__description {
+    display: block;
+    font-size: 32px;
+    font-weight: 400;
+    width: 775px;
+    text-align: center;
+  }
+  .services__button-container {
+    display: flex;
+    justify-content: end; 
+    align-items: center; 
+    width: 100%;
+    height: 88px;
+  }
+  .services__button {
+    height: 100%;
+    margin-right: 104px;
+  }
+  .promo__content {
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    align-items: start;
+    width: 100%;
+    margin-left: 300px;
+  }
+  .promo__text {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 650px;
+    word-spacing: 0.032rem;
+  }
+  .promo__title {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 120%;
+  }
+  .promo__description {
+    font-size: 32px;
+    width: 650px;
+    line-height: 117%;
+    word-spacing: 0.04rem;
+  }
+  .promo__button-container {
+    width: 450px;
+  }
+  .promo__button {
+    font-size: 28px;
+    word-spacing: 0.1rem;
+  }
+  .offer {
+    justify-content: space-between;
+  }
+  .offer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .offer__title {
+    width: 822px;
+  }
+  .text__title {
+    letter-spacing: 0.11rem;
+  }
+  .offer__description {
+    width: 60%;
+    position: relative;
+    overflow: visible;
+    line-height: 117%;
+    letter-spacing: 0.02rem;
+  }
+  .offer__description::before {
+    position: absolute;
+    content: "С ФОТО И ВИДЕО ОТЧЕТАМИ КАЖДОГО ЭТАПА СТРОИТЕЛЬСТВА";
+    line-height: 120%;
+    overflow: hidden;
+    font-size: 17px;
+    padding: 12px 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -36px;
+    right: -180px;
+    width: 220px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid #b49b7d;
+    border-radius: 12px;
+    transform: rotate(-6deg);
+    transition: transform 0.3s ease;
+    z-index: 2;
+  }
+  //   .page__section[id="page_section-id-1"]::before {
+  //     background-image: url("../images/backgrounds/basement__BG1.png");
+  //     background-position: bottom center; /* или bottom */
+  //     filter: blur(3px);
+  //   }
+  //   .page__section[id="page_section-id-1"]::after {
+  //     background-color: rgba(82, 79, 76, 0.6);
+  //   }
+
+  //   /* PAGE SECTION 2 */
+
+  //   .page__section[id="page_section-id-2"]::before {
+  //     background-image: url("../images/backgrounds/BG_section2.jpg");
+  //   }
+  //   .page__section[id="page_section-id-2"]::after {
+  //     background-color: rgba(82, 79, 76, 0.3);
+  //   }
+
+  //   /* PAGE SECTION 3 */
+
+  //   .page__section[id="page_section-id-3"]::before {
+  //     background-image: url("../images/backgrounds/BG_section3.jpg");
+  //   }
+
+  //   /* PAGE SECTION 4 */
+
+  //   .page__section[id="page_section-id-4"]::before {
+  //     background-image: url("../images/backgrounds/BG_section4.jpg");
+  //   }
+
+  //   /* PAGE SECTION 5 */
+
+  //   .page__section[id="page_section-id-5"]::before {
+  //     background-image: url("../images/backgrounds/BG_section5.jpg");
+  //   }
+}

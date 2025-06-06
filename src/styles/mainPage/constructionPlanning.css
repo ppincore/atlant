@@ -67,5 +67,8 @@
   /* Стили для MacBook Pro с разрешением 1728x1117 */
 }
 
-@media (width <= 767px) {
+@media (width <= 1366px) {
+  .construction-planning__content{
+    display: none;
+  }
 }

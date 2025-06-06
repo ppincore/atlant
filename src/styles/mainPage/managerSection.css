@@ -110,5 +110,49 @@
   /* Стили для MacBook Pro с разрешением 1728x1117 */
 }
 
-@media (width <= 767px) {
+@media (width <= 430px) {
+  .manager__section{
+    width: 100%;
+    justify-content: center;
+  }
+  .manager__card{
+    display: none;
+  }
+  .manager__section-content {
+    width: 95%;
+    
+  }
+  .manager__title{
+    font-size: 2em;
+    width: 100%;
+  }
+  .manager__wrapp{
+    gap: 5em;
+  }
+  .manager__button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .manager__button{
+    margin: 0;
+    width: 90%;
+    align-self: center;
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+  .manager__button::after{
+    top: -55px;
+    right: -15px;
+    width: 75px;
+    height: 75px;
+    z-index: 2;
+  }
+    .manager__button::before{
+    top: -35px;
+    right: -5px;
+    width: 45px;
+    height: 45px;
+    z-index: 2;
+  }
 }

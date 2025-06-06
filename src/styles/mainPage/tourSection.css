@@ -158,3 +158,27 @@
     font-size: 15px;
   } 
 }
+
+@media (width <= 430px) {
+  .tour__content{
+    width: 100%;
+  }
+  .tour__card-wrapper{
+    display: none;
+  }
+  .tour__button-container{
+    width: 100%;
+  }
+  .tour__button{
+    align-self: center;
+  }
+  .tour__description{
+    padding: 0;
+    text-align: end;
+  }
+  .tour__button-description{
+    width: 85%;
+    align-self: center;
+    text-align: center;
+  }
+}
