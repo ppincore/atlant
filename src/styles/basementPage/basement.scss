@@ -21,7 +21,13 @@
 // @use "../styles/footer.css" as *;
 // // @use "../styles/backgrounds.css" as *;
 
+body {
+}
+
 .basement {
+  .page__section {
+    background-color: #273b46;
+  }
   .section__hero {
     margin: 0;
     width: 75%;
@@ -40,6 +46,10 @@
   .hero__title {
     // width: 80%;
     word-spacing: 0.2rem;
+  }
+  .hero__title::before {
+    background-color: #fff;
+    box-shadow: 0 0.0625em 0.375em #fff;
   }
   .hero__description {
     font-size: 33px;
@@ -135,9 +145,11 @@
   }
   .hero__button-container {
     padding-top: 0;
+    height: 100px;
   }
   .hero__button {
     width: 602px;
+    height: 100%;
     letter-spacing: 0.05em;
     font-size: 32px;
     padding: 0;
@@ -308,6 +320,15 @@
     transform: rotate(-6deg);
     transition: transform 0.3s ease;
     z-index: 2;
+  }
+  .footer {
+    background-color: #273b46;
+    .description-underline {
+      text-underline-offset: 4px;
+    }
+  }
+  .footer::before {
+    box-shadow: 0px 4px 4px #ffffff;
   }
   //   .page__section[id="page_section-id-1"]::before {
   //     background-image: url("../images/backgrounds/basement__BG1.png");

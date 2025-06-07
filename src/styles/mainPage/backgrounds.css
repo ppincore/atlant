@@ -1,18 +1,17 @@
 /* PAGE SECTION 1 */
 
 .page__section[id="page_section-id-1"]::before {
-  background-image: url("../images/backgrounds/BG_section1.jpg");
-    filter: blur(3px);
+  background-image: url("../../images/backgrounds/BG_section1.jpg");
+  filter: blur(3px);
 }
 .page__section[id="page_section-id-1"]::after {
-
-   background-color: rgba(82, 79, 76, 0.6);
+  background-color: rgba(82, 79, 76, 0.6);
 }
 
 /* PAGE SECTION 2 */
 
 .page__section[id="page_section-id-2"]::before {
-  background-image: url("../images/backgrounds/BG_section2.jpg");
+  background-image: url("../../images/backgrounds/BG_section2.jpg");
 }
 .page__section[id="page_section-id-2"]::after {
   background-color: rgba(82, 79, 76, 0.6);
@@ -21,30 +20,28 @@
 /* PAGE SECTION 3 */
 
 .page__section[id="page_section-id-3"]::before {
-  background-image: url("../images/backgrounds/BG_section3.jpg");
-  
+  background-image: url("../../images/backgrounds/BG_section3.jpg");
 }
 
 /* PAGE SECTION 4 */
 
 .page__section[id="page_section-id-4"]::before {
-  background-image: url("../images/backgrounds/BG_section4.jpg");
-  
+  background-image: url("../../images/backgrounds/BG_section4.jpg");
 }
 
 /* PAGE SECTION 5 */
 
 .page__section[id="page_section-id-5"]::before {
-  background-image: url("../images/backgrounds/BG_section5.jpg");
+  background-image: url("../../images/backgrounds/BG_section5.jpg");
 }
 
 /* PAGE SECTION 6 */
 
 .page__section[id="page_section-id-6"]::before {
-  background-image: url("../images/backgrounds/BG_section6.png");
+  background-image: url("../../images/backgrounds/BG_section6.png");
   /* background-size: 100%; */
 }
-.page__section[id="page_section-id-6"]::after{
+.page__section[id="page_section-id-6"]::after {
   background-color: rgba(82, 79, 76, 0.1);
 }
 
@@ -52,16 +49,16 @@
 
 .page__section[id="page_section-id-7"]::before {
   filter: blur(3px);
-  background-image: url("../images/backgrounds/BG_section7.jpg");
+  background-image: url("../../images/backgrounds/BG_section7.jpg");
 }
-.page__section[id="page_section-id-7"]::after{
+.page__section[id="page_section-id-7"]::after {
   background-color: rgba(82, 79, 76, 0.9);
 }
 
 /* PAGE SECTION 8 */
 
 .page__section[id="page_section-id-8"]::before {
-  background-image: url("../images/backgrounds/BG_section8.jpg");
+  background-image: url("../../images/backgrounds/BG_section8.jpg");
   /* background-size: 100% 50%; */
   background-position: center;
   background-size: cover;
@@ -70,15 +67,14 @@
 /* PAGE SECTION 9 */
 
 .page__section[id="page_section-id-9"]::before {
-  background-image: url("../images/backgrounds/BG_section9.jpg");
+  background-image: url("../../images/backgrounds/BG_section9.jpg");
   /* background-position: -350px; */
 }
 
 /* PAGE SECTION 10 */
 
 .page__section[id="page_section-id-10"]::before {
-  background-image: url('');
+  background-image: url("");
 }
 .page__section[id="page_section-id-10"] {
-  
 }
